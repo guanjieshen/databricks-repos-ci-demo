@@ -1,7 +1,7 @@
 {
     "environments": {
         "default": {
-            "profile": "e2-demo-aws",
+            "profile": "DEFAULT",
             "workspace_dir": "/Shared/dbx/projects/databricks-repos-ci-demo",
             "artifact_location": "dbfs:/dbx/databricks-repos-ci-demo"
         }
