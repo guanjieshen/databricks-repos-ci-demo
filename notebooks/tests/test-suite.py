@@ -4,7 +4,7 @@
 
 # COMMAND ----------
 
-# DBTITLE 1,Define testing classes - test
+# DBTITLE 1,Define testing classes - release 0.0.1
 from runtime.nutterfixture import NutterFixture, tag
 
 
