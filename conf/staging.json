@@ -5,10 +5,11 @@
                 "name": "nutter-testing-suite",
                 "new_cluster": {
                     "spark_version": "7.3.x-cpu-ml-scala2.12",
-                    "node_type_id": "i3.xlarge",
-                    "aws_attributes": {
-                        "first_on_demand": 0,
-                        "availability": "SPOT"
+                    "node_type_id": "Standard_DS3_v2",
+                    "azure_attributes": {
+                        "first_on_demand": 1,
+                        "availability": "ON_DEMAND_AZURE",
+                        "spot_bid_max_price": "-1"
                     },
                     "num_workers": 1
                 },
