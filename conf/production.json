@@ -5,10 +5,10 @@
                 "name": "repos-ci-demo-job",
                 "new_cluster": {
                     "spark_version": "7.3.x-cpu-ml-scala2.12",
-                    "node_type_id": "i3.xlarge",
+                    "node_type_id": "Standard_DS3_v2",
                     "aws_attributes": {
-                        "first_on_demand": 0,
-                        "availability": "SPOT"
+                        "first_on_demand": 1,
+                        "availability": "ON_DEMAND_AZURE"
                     },
                     "num_workers": 1
                 },

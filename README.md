@@ -1,6 +1,6 @@
 # databricks-repos-ci-demo
 
-Example CI pipeline with Databricks notebooks on AWS.
+Example CI pipeline with Databricks notebooks on Azure.
 
 
 ## Quickstart
