@@ -14,7 +14,7 @@ class PrepareDataTestFixture(NutterFixture):
 
     def assertion_test_name(self):
         counter = spark.sql(
-            "SELECT COUNT(*) AS total FROM delta.`dbfs:/databricks-repos-ci-demo/data/boston`"
+            "SELECT COUNT(*) AS total FROM delta.`dbfs:/ci-cd-sample/data/boston`"
         )
         first_row = counter.first()
         assert first_row[0] > 1
@@ -32,4 +32,8 @@ is_job = (
 )
 if is_job:
     result.exit(dbutils)
+
+
+# COMMAND ----------
+
 

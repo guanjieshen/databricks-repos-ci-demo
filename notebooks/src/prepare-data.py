@@ -21,4 +21,4 @@ def get_data() -> DataFrame:
 
 # DBTITLE 1,Main
 df = get_data()
-df.write.format("delta").mode("overwrite").save("dbfs:/gcp-ci-sample/data/boston")
+df.write.format("delta").mode("overwrite").save("dbfs:/ci-cd-sample/data/boston")
