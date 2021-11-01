@@ -5,15 +5,13 @@
                 "name": "nutter-testing-suite",
                 "new_cluster": {
                     "spark_version": "9.1.x-scala2.12",
-                    "spark_conf": {
-                        "spark.databricks.cluster.profile": "singleNode",
-                        "spark.master": "local[*, 4]"
+                    "node_type_id": "Standard_F4",
+                    "azure_attributes": {
+                        "first_on_demand": 1,
+                        "availability": "ON_DEMAND_AZURE",
+                        "spot_bid_max_price": "-1"
                     },
-                    "custom_tags": {
-                        "ResourceClass": "SingleNode"
-                    },
-                    "instance_pool_id": "1027-200308-dream730-pool-0bvt3c1f",
-                    "driver_instance_pool_id": "1027-200308-dream730-pool-0bvt3c1f"
+                    "num_workers": 1
                 },
                 "libraries": [],
                 "max_concurrent_runs": 1,
