@@ -22,4 +22,19 @@ def get_data() -> DataFrame:
 # DBTITLE 1,Main
 df = get_data()
 display(df)
+
+# COMMAND ----------
+
+# MAGIC %autoreload 2
+
+# COMMAND ----------
+
+from helpers import my_funcs
+
+
+output_df = df.transform(lambda df: my_funcs.roundValue(df, "CRIM",3))
+display(output_df)
+
+# COMMAND ----------
+
 df.write.format("delta").mode("overwrite").save("dbfs:/databricks-ci-demo/data/boston")
