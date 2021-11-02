@@ -25,14 +25,9 @@ display(df)
 
 # COMMAND ----------
 
-# MAGIC %autoreload 2
-
-# COMMAND ----------
-
 from helpers import my_funcs
 
-
-output_df = df.transform(lambda df: my_funcs.roundValue(df, "CRIM",3))
+output_df = df.transform(lambda df: my_funcs.roundValue(df, "CRIM",3)).transform(lambda df: my_funcs.roundValue(df, "RM",3))
 display(output_df)
 
 # COMMAND ----------
