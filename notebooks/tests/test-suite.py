@@ -1,5 +1,12 @@
 # Databricks notebook source
-# DBTITLE 1,Install nutter and it's dependencies
+# MAGIC %md ### Install Depedencies
+# MAGIC 
+# MAGIC - `nutter`
+# MAGIC - `chispa`
+
+# COMMAND ----------
+
+# DBTITLE 0,Install nutter and
 # MAGIC %pip install -U nutter chispa
 
 # COMMAND ----------
