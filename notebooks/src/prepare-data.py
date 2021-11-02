@@ -21,4 +21,5 @@ def get_data() -> DataFrame:
 
 # DBTITLE 1,Main
 df = get_data()
+display(df)
 df.write.format("delta").mode("overwrite").save("dbfs:/databricks-ci-demo/data/boston")
